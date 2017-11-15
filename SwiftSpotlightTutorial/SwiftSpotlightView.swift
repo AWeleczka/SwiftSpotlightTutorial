@@ -89,7 +89,9 @@ public class SwiftSpotlightView: UIView, CAAnimationDelegate {
         }
         self.display(self.spotlights[self.currentIndex])
       },
-      completion: nil)
+      completion: { (_) in
+        self.delegate?.spotlightDidNavigate(spotlight: self, index: index)
+    })
   }
 
   private func display(_ spotlight: SwiftSpotlightItem) {
