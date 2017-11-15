@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftSpotlightTutorialDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Spotlight Tutorial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-zJ-Vkw">
+                                <rect key="frame" x="100.5" y="254" width="173.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Yjs-sD-ZLz">
+                                <rect key="frame" x="169" y="325" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fY-9z-j2t">
+                                <rect key="frame" x="106.5" y="412" width="161" height="30"/>
+                                <state key="normal" title="@AWeleczka on Twitter"/>
+                                <connections>
+                                    <action selector="buttonPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTR-Bp-VFf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fY-9z-j2t" firstAttribute="top" secondItem="Yjs-sD-ZLz" secondAttribute="bottom" constant="50" id="Qab-lZ-j0e"/>
+                            <constraint firstItem="f3V-zJ-Vkw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S7E-w1-054"/>
+                            <constraint firstItem="Yjs-sD-ZLz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T5w-P9-405"/>
+                            <constraint firstItem="Yjs-sD-ZLz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hUt-fG-IMr"/>
+                            <constraint firstItem="Yjs-sD-ZLz" firstAttribute="top" secondItem="f3V-zJ-Vkw" secondAttribute="bottom" constant="50" id="hqG-JA-RMN"/>
+                            <constraint firstItem="2fY-9z-j2t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="riG-K3-284"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="2fY-9z-j2t" id="DhY-kU-H7Q"/>
+                        <outlet property="label" destination="f3V-zJ-Vkw" id="LPy-n9-bL3"/>
+                        <outlet property="spinnner" destination="Yjs-sD-ZLz" id="wIB-qH-iHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
