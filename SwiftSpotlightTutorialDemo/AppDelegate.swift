@@ -1,11 +1,3 @@
-//
-// SwiftSpotlightTutorial
-// (c) 2017 Alexander Weleczka
-//
-// https://AWeleczka.de/
-// https://github.com/AWeleczka/SwiftSpotlightTutorial/
-//
-
 import UIKit
 
 @UIApplicationMain

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0525E5F61F8771DB0009F2F4 /* SwiftSpotlightTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0525E5EC1F8771DB0009F2F4 /* SwiftSpotlightTutorial.framework */; };
-		0525E5FB1F8771DB0009F2F4 /* SwiftSpotlightTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525E5FA1F8771DB0009F2F4 /* SwiftSpotlightTutorialTests.swift */; };
 		0525E5FD1F8771DB0009F2F4 /* SwiftSpotlightTutorial.h in Headers */ = {isa = PBXBuildFile; fileRef = 0525E5EF1F8771DB0009F2F4 /* SwiftSpotlightTutorial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0525E6071F8776080009F2F4 /* SwiftSpotlightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525E6061F8776080009F2F4 /* SwiftSpotlightItem.swift */; };
 		0525E6091F8776180009F2F4 /* SwiftSpotlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525E6081F8776180009F2F4 /* SwiftSpotlightView.swift */; };
@@ -21,23 +19,10 @@
 		05B7DCAD1F8BF141008DA261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B7DCAB1F8BF141008DA261 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0525E5F71F8771DB0009F2F4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0525E5E31F8771DB0009F2F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0525E5EB1F8771DB0009F2F4;
-			remoteInfo = SwiftSpotlightTutorial;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0525E5EC1F8771DB0009F2F4 /* SwiftSpotlightTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSpotlightTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0525E5EF1F8771DB0009F2F4 /* SwiftSpotlightTutorial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSpotlightTutorial.h; sourceTree = "<group>"; };
 		0525E5F01F8771DB0009F2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0525E5F51F8771DB0009F2F4 /* SwiftSpotlightTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSpotlightTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0525E5FA1F8771DB0009F2F4 /* SwiftSpotlightTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSpotlightTutorialTests.swift; sourceTree = "<group>"; };
-		0525E5FC1F8771DB0009F2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0525E6061F8776080009F2F4 /* SwiftSpotlightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSpotlightItem.swift; sourceTree = "<group>"; };
 		0525E6081F8776180009F2F4 /* SwiftSpotlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSpotlightView.swift; sourceTree = "<group>"; };
 		0525E60A1F8778840009F2F4 /* SwiftSpotlightDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSpotlightDelegate.swift; sourceTree = "<group>"; };
@@ -59,14 +44,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0525E5F21F8771DB0009F2F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0525E5F61F8771DB0009F2F4 /* SwiftSpotlightTutorial.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		05B7DC9D1F8BF141008DA261 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				0525E5EE1F8771DB0009F2F4 /* SwiftSpotlightTutorial */,
-				0525E5F91F8771DB0009F2F4 /* SwiftSpotlightTutorialTests */,
 				05B7DCA11F8BF141008DA261 /* SwiftSpotlightTutorialDemo */,
 				0525E5ED1F8771DB0009F2F4 /* Products */,
 			);
@@ -91,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				0525E5EC1F8771DB0009F2F4 /* SwiftSpotlightTutorial.framework */,
-				0525E5F51F8771DB0009F2F4 /* SwiftSpotlightTutorialTests.xctest */,
 				05B7DCA01F8BF141008DA261 /* SwiftSpotlightTutorialDemo.app */,
 			);
 			name = Products;
@@ -108,15 +83,6 @@
 				0525E60C1F8778A20009F2F4 /* SwiftSpotlightConfig.swift */,
 			);
 			path = SwiftSpotlightTutorial;
-			sourceTree = "<group>";
-		};
-		0525E5F91F8771DB0009F2F4 /* SwiftSpotlightTutorialTests */ = {
-			isa = PBXGroup;
-			children = (
-				0525E5FA1F8771DB0009F2F4 /* SwiftSpotlightTutorialTests.swift */,
-				0525E5FC1F8771DB0009F2F4 /* Info.plist */,
-			);
-			path = SwiftSpotlightTutorialTests;
 			sourceTree = "<group>";
 		};
 		05B7DCA11F8BF141008DA261 /* SwiftSpotlightTutorialDemo */ = {
@@ -166,24 +132,6 @@
 			productReference = 0525E5EC1F8771DB0009F2F4 /* SwiftSpotlightTutorial.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0525E5F41F8771DB0009F2F4 /* SwiftSpotlightTutorialTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0525E6031F8771DB0009F2F4 /* Build configuration list for PBXNativeTarget "SwiftSpotlightTutorialTests" */;
-			buildPhases = (
-				0525E5F11F8771DB0009F2F4 /* Sources */,
-				0525E5F21F8771DB0009F2F4 /* Frameworks */,
-				0525E5F31F8771DB0009F2F4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0525E5F81F8771DB0009F2F4 /* PBXTargetDependency */,
-			);
-			name = SwiftSpotlightTutorialTests;
-			productName = SwiftSpotlightTutorialTests;
-			productReference = 0525E5F51F8771DB0009F2F4 /* SwiftSpotlightTutorialTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		05B7DC9F1F8BF141008DA261 /* SwiftSpotlightTutorialDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05B7DCAF1F8BF141008DA261 /* Build configuration list for PBXNativeTarget "SwiftSpotlightTutorialDemo" */;
@@ -216,10 +164,6 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
-					0525E5F41F8771DB0009F2F4 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-					};
 					05B7DC9F1F8BF141008DA261 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -240,7 +184,6 @@
 			projectRoot = "";
 			targets = (
 				0525E5EB1F8771DB0009F2F4 /* SwiftSpotlightTutorial */,
-				0525E5F41F8771DB0009F2F4 /* SwiftSpotlightTutorialTests */,
 				05B7DC9F1F8BF141008DA261 /* SwiftSpotlightTutorialDemo */,
 			);
 		};
@@ -248,13 +191,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		0525E5EA1F8771DB0009F2F4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0525E5F31F8771DB0009F2F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,14 +251,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0525E5F11F8771DB0009F2F4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0525E5FB1F8771DB0009F2F4 /* SwiftSpotlightTutorialTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		05B7DC9C1F8BF141008DA261 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,14 +261,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0525E5F81F8771DB0009F2F4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0525E5EB1F8771DB0009F2F4 /* SwiftSpotlightTutorial */;
-			targetProxy = 0525E5F71F8771DB0009F2F4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		05B7DCA61F8BF141008DA261 /* Main.storyboard */ = {
@@ -411,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -520,36 +440,6 @@
 			};
 			name = Release;
 		};
-		0525E6041F8771DB0009F2F4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2YXKCDT63;
-				INFOPLIST_FILE = SwiftSpotlightTutorialTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.aweleczka.swift.SwiftSpotlightTutorialTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0525E6051F8771DB0009F2F4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2YXKCDT63;
-				INFOPLIST_FILE = SwiftSpotlightTutorialTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.aweleczka.swift.SwiftSpotlightTutorialTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		05B7DCB01F8BF141008DA261 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -597,15 +487,6 @@
 			buildConfigurations = (
 				0525E6011F8771DB0009F2F4 /* Debug */,
 				0525E6021F8771DB0009F2F4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0525E6031F8771DB0009F2F4 /* Build configuration list for PBXNativeTarget "SwiftSpotlightTutorialTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0525E6041F8771DB0009F2F4 /* Debug */,
-				0525E6051F8771DB0009F2F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
