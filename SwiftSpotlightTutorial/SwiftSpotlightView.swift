@@ -46,11 +46,11 @@ public class SwiftSpotlightView: UIView, CAAnimationDelegate {
     tapGestureRecognizer.numberOfTapsRequired = 1
   }
 
-  public func attach(controller: UIViewController) {
-    attach(view: controller.view)
+  public func attachToController(_ controller: UIViewController) {
+    attachToView(controller.view)
   }
 
-  public func attach(view: UIView) {
+  public func attachToView(_ view: UIView) {
     delegate?.spotlightWillAppear(spotlight: self)
 
     view.addSubview(self)
