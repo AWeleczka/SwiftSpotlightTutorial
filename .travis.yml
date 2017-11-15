@@ -1,0 +1,24 @@
+language: objective-c
+osx_image: xcode8.2
+
+env:
+  global:
+    - LANG=en_US.UTF-8
+    - LC_ALL=en_US.UTF-8
+    - WORKSPACE="SwiftSpotlightTutorial.xcodeproj"
+    - IOS_FRAMEWORK_SCHEME="SwiftSimpleLogger iOS"
+    - IOS_SDK=iphonesimulator10.2
+  matrix:
+    - DESTINATION="OS=10.0,name=iPhone 6"            TARGET="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="NO"
+
+before_install:
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+
+script: 
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - xcodebuild -list
+  - travis_retry xcodebuild -project "$WORKSPACE" -target "$TARGET" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+notifications:
+  email: true
