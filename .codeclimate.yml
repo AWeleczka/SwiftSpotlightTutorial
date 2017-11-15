@@ -1,0 +1,10 @@
+engines:
+  tailor:
+    enabled: true
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - "**.swift"
+exclude_paths:
+- "docs/"
