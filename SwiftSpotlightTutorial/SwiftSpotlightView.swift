@@ -47,10 +47,10 @@ public class SwiftSpotlightView: UIView, CAAnimationDelegate {
   }
 
   public func attach(to view: UIViewController) {
-    attach(to: view.view)
+    attach(view.view)
   }
 
-  public func attach(to view: UIView) {
+  public func attach(_ view: UIView) {
     delegate?.spotlightWillAppear(spotlight: self)
 
     view.addSubview(self)
