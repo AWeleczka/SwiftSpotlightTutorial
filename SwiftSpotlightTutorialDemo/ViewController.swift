@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         ]
 
         spotlightview = SwiftSpotlightView(frame: view.frame, spotlights: spotlights)
-        spotlightview.attach(to: self)
+        spotlightview.attach(controller: self)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
