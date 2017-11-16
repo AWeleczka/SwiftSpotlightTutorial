@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "SwiftSpotlightTutorial"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
   s.summary = "A Spotlight Tutorial built in Swift"
   s.description = <<-DESC
     Easily guide your app's users through the first experience of your application
