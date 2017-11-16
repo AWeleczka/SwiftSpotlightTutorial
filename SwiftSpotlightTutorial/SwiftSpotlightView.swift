@@ -68,15 +68,28 @@ public class SwiftSpotlightView: UIView, CAAnimationDelegate {
     navigate(to: currentIndex + 1)
   }
 
+  public func getSpotlight(_ index: Int) -> SwiftSpotlightItem? {
+    guard index < self.spotlights.count else {
+      return nil
+    }
+
+    return self.spotlights[index]
+  }
+
+  public func getSpotlights() -> [SwiftSpotlightItem] {
+    return self.spotlights
+  }
+
   private func navigate(to index: Int = 0) {
     guard spotlights.count > 0 else {
       return
     }
 
-    if index > 0 && index < spotlights.count {
+    if index >= 0 && index < spotlights.count {
       currentIndex = index
     } else {
-      currentIndex = 0
+      self.detach()
+      //currentIndex = 0
     }
 
     UIView.animate(
@@ -88,7 +101,7 @@ public class SwiftSpotlightView: UIView, CAAnimationDelegate {
           view.removeFromSuperview()
         }
         self.display(self.spotlights[self.currentIndex])
-      },
+    },
       completion: { (_) in
         self.delegate?.spotlightDidNavigate(spotlight: self, index: index)
     })

@@ -26,6 +26,8 @@ public class SwiftSpotlightItem {
 
   private let allowPassthrough: Bool
 
+  public var info: Any? = nil
+
   public init(
     target: CGRect,
     shape: SwiftSpotlightItem.Shape,
