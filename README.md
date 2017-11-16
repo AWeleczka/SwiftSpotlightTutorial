@@ -49,4 +49,4 @@ SOFTWARE.
 [![License Badge](https://cocoapod-badges.herokuapp.com/l/SwiftSpotlightTutorial/badge.svg)](https://cocoapods.org/pods/SwiftSpotlightTutorial)
 [![Code Climate](https://codeclimate.com/github/AWeleczka/SwiftSpotlightTutorial/badges/gpa.svg)](https://codeclimate.com/github/AWeleczka/SwiftSpotlightTutorial)
 [![Issue Count](https://codeclimate.com/github/AWeleczka/SwiftSpotlightTutorial/badges/issue_count.svg)](https://codeclimate.com/github/AWeleczka/SwiftSpotlightTutorial)
-[![Build Status](https://travis-ci.org/AWeleczka/SwiftSpotlightTutorial.svg?branch=master)](https://travis-ci.org/AWeleczka/SwiftSpotlightTutorial)
+[![Build Status](https://travis-ci.org/AWeleczka/SwiftSpotlightTutorial.svg)](https://travis-ci.org/AWeleczka/SwiftSpotlightTutorial)
