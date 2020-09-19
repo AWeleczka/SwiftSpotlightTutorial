@@ -2,6 +2,13 @@
 **A Spotlight Tutorial built in Swift**  
 Easily guide your app's users through the first experience of your application
 
+---
+
+### Note
+I do not have access to a mac any longer, therefore  development on this project is on ice from my side.
+
+---
+
 # Installation
 SwiftSimpleLogger can be installed on multiple ways.
 
